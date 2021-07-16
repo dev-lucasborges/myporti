@@ -237,6 +237,7 @@ img {
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
+  
 }
 
 /*==================== NAV ====================*/
@@ -246,6 +247,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .nav__logo,
@@ -305,8 +307,9 @@ img {
 
 .nav__close {
   position: absolute;
-  right: 1.3rem;
-  bottom: 0.5rem;
+  left: 47%;
+  margin: 0;
+  bottom: 1rem;
   font-size: 1.5rem;
   cursor: pointer;
   color: var(--first-color);
