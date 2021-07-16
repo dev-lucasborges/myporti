@@ -17,7 +17,13 @@ if(navClose){
         navMenu.classList.remove('show-menu')
     })
 }
-
+/* <!--==================== PROGRESS BAR ====================--> */
+let progress = document.getElementById('progressbar')
+let totalHeight = document.body.scrollHeight - window.innerHeight;
+window.onscroll = function(){
+    let progressHeight = (window.pageYOffset / totalHeight) *100;
+    progress.style.height = progressHeight + "%";
+}
 
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link')
