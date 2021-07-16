@@ -80,12 +80,14 @@ body.dark-theme{
 }
 /*========== Button Dark/Light ==========*/
 .nav__btns{
-    display: flex;
+    float: right;
     align-items: center;
 }
 
 .change-theme{
+
     font-size: 1.5rem;
+    font-size: 1.15rem;
     color: var(--title-color);
     margin-right: var(--mb-1);
     cursor: pointer;
