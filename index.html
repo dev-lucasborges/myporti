@@ -111,7 +111,7 @@
                         <div class="home__data">
                             <h1 class="home__title">Olá, eu sou o Lucas</h1>
                             <h3 class="home__subtitle">Desenvolvedor Web</h3>
-                            <p class="home__description">Jovem Aprendiz, Proativo, em busca de adquirir mais conhecimento!</p>
+                            <p class="home__description">Sempre em busca de adquirir mais conhecimento!</p>
                             <a href="#contact" class="button button--flex">
                                 Contate-me <i class="uil uil-message button__icon"></i>
                             </a>
@@ -134,7 +134,7 @@
                 <span class="section__subtitle">Minha Introdução</span>
 
                 <div class="about__container container grid">
-                    <img src="assets/img/about-png.gif" alt="" class="about__img">
+                    <img src="assets/img/about-png2.gif" alt="" class="about__img"><br>
 
                     <div class="about__data">
                         <p class="about__description">
@@ -263,7 +263,7 @@
                         <div class="qualification__data">
                             <div>
                                 <h3 class="qualification__title">Escola</h3>
-                                <span class="qualification__subtitle">Cursando o primeiro ano do Ensino Médio</span>
+                                <span class="qualification__subtitle">Atualmente cursando o 1° ano do Ensino Médio</span>
                                 
                             </div>
                             <span class="qualification__rounder"></span>
@@ -275,6 +275,14 @@
                             <div>
                                 <h3 class="qualification__title">Cursos</h3>
                                 <span class="qualification__subtitle">Web Design Full-Stack - ProgramadorBR</span>
+                                    <span>
+                                    
+                                    <h4>HTML5</h4>
+                                    <h4>CSS3</h4>
+                                    <h4>JQUERY</h4>
+                                    <h4>BOOTSTRAP</h4>
+
+                                </span>
                                 
                             </div>
                             <span class="qualification__rounder"></span>
@@ -356,35 +364,37 @@
                         </div>
 
                     </div>
-                    <form action="" class="contact__form grid">
+
+                    
+                    <form method="POST" action="https://formsubmit.co/lucas.f.borges2005@gmail.com" class="contact__form grid">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="http://lucasborges11.vercel.app/confirm.html">
+
                         <div class="contact__inputs grid">
                             <div class="contact__content">
                                 <label for="" class="contact__label">Nome</label>
-                                <input type="text" class="contact__input">
+                                <input type="text" name="name" class="contact__input" required>
                             </div>
 
                             <div class="contact__content">
                                 <label for="" class="contact__label">Email</label>
-                                <input type="email" class="contact__input">
+                                <input type="email" name="email" class="contact__input" required>
                             </div>
 
-                            <div class="contact__content">
+                            <!-- <div class="contact__content">
                                 <label for="" class="contact__label">Projeto</label>
-                                <input type="text" class="contact__input">
-                            </div>
+                                <input type="text" name="name" class="contact__input" required>
+                            </div> -->
 
                             <div class="contact__content">
                                 <label for="" class="contact__label">Mensagem</label>
-                                <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                                <textarea name="message" id="" cols="0" rows="7" class="contact__input"></textarea>
                             </div>
 
-                            <div>
-                                <a href="#" class="button button--flex">
-                                    Enviar Mensagem
-                                    <i class="uil uil-message button__icon"></i>
-                                </a>
-                            </div>
+                            <input class="contact__input2" type="submit" placeholder="Enviar Mensagem">
+                           
                         </div>
+                        
                     </form>
                 </div>
 
