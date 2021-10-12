@@ -372,7 +372,8 @@ img {
 }
 
 .home__title {
-  font-size: var(--big-font-size);
+    color: var(--title-color);
+    font-size: var(--big-font-size);
 }
 
 .home__subtitle {
@@ -496,13 +497,15 @@ img {
     display: flex;
     align-items: center;
     margin-bottom: var(--mb-2-5);
-    cursor: pointer;
+    text-align: center;
 }
 
 .skills__icon,
 .skills__arrow{
     font-size: 2rem;
     color: var(--first-color);
+    align-items: center;
+    text-align: center;
 }
 
 .skills__icon{
@@ -511,6 +514,7 @@ img {
 
 .skills__title{
     font-size: var(--h3-font-size);
+    
 }
 
 .skills__subtitle{
