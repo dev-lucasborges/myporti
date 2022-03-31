@@ -624,7 +624,7 @@ img {
     width: 1px;
     height: 100%;
     background-color: var(--first-color);
-    transform: translate(3px, 0px); */
+    transform: translate(3px, 0px);} */
 
 
 /*==================== SERVICES ====================*/
@@ -632,6 +632,19 @@ img {
 /* Active Modal */
 
 /*==================== PORTFOLIO ====================*/
+
+.portfolio__img{
+    border-radius: 10px;
+}
+
+a:visited{
+    color: #5785e0;
+}
+
+.portfolio__data a{
+    color: #5785e0;
+    text-decoration:underline;
+}
 
 /*==================== PROJECT IN MIND ====================*/
 .project{
