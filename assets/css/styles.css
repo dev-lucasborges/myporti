@@ -975,3 +975,7 @@ a:visited{
 h1{
     color: var(--body-font);
 }
+
+.text-center{
+    justify-items: center;
+}
