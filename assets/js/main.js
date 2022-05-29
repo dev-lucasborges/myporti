@@ -18,12 +18,6 @@ if(navClose){
     })
 }
 /* <!--==================== PROGRESS BAR ====================--> */
-let progress = document.getElementById('progressbar')
-let totalHeight = document.body.scrollHeight - window.innerHeight;
-window.onscroll = function(){
-    let progressHeight = (window.pageYOffset / totalHeight) *100;
-    progress.style.height = progressHeight + "%";
-}
 
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link')
@@ -51,24 +45,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
-const sections = document.querySelectorAll('section[id]')
 
-function scrollActive(){
-    const scrollY = window.pageYOffset
-
-    sections.forEach(current =>{
-        const sectionHeight = current.offsetHeight
-        const sectionTop = current.offsetTop - 50;
-        sectionId = current.getAttribute('id')
-
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
-        }else{
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
-        }
-    })
-}
-window.addEventListener('scroll', scrollActive)
 
 /*==================== CHANGE BACKGROUND HEADER ====================*/ 
 
